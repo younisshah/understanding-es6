@@ -8,3 +8,12 @@ function foo(...x){
 }
 
 foo(1, 2, 3, 4); // 4
+
+// ES5 implementation
+
+function foo() {
+    return arguments.length;
+}
+
+foo(1, 2, 3, 4); // 4
+
