@@ -11,9 +11,10 @@ foo(); // I am default
 /**
  * ES5 version
  */
-function ES5Foo(msg){
-  msg = msg || "I am default";
-  return msg;
+function foo() {
+    var msg = arguments.length <= 0 || arguments[0] === undefined ? "I am default" : arguments[0];
+
+    return msg;
 }
 
 foo(); // I am default
